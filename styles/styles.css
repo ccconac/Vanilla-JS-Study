@@ -1,6 +1,12 @@
+:root {
+  --main-color: dodgerblue;
+  --text-color: black;
+  --light-color: white;
+}
+
 body {
   margin: 0;
-  background-color: dodgerblue;
+  background-color: var(--main-color);
 }
 
 .container {
@@ -14,14 +20,15 @@ header {
   align-items: center;
 
   height: 10%;
+
   box-shadow: 0 2px 4px #0000001a;
   padding: 0 30px 0 30px;
 
-  background-color: white;
+  background-color: var(--light-color);
 }
 
 .title {
-  color: dodgerblue;
+  color: var(--main-color);
 }
 
 .categories {
@@ -30,15 +37,15 @@ header {
 }
 
 a {
+  color: var(--text-color);
   font-size: 18px;
   font-weight: bold;
 
   text-decoration-line: none;
-  color: black;
 }
 
 a:hover {
-  color: dodgerblue;
+  color: var(--main-color);
 }
 
 main {
@@ -59,7 +66,7 @@ main {
 }
 
 .color-container {
-  background-color: black;
+  background-color: var(--text-color);
   padding: 20px 25px;
 
   border-radius: 25px;
@@ -74,16 +81,16 @@ main {
 }
 
 .text {
-  color: white;
+  color: var(--light-color);
 }
 
 .color {
-  color: dodgerblue;
+  color: var(--main-color);
 }
 
 .button {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   border-radius: 5px;
 
   padding: 5px 10px;
@@ -93,8 +100,8 @@ main {
 }
 
 .button:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--light-color);
 
   transition: 0.5s;
 }
