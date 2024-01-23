@@ -38,7 +38,7 @@ header {
 
 a {
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.125rem;
 
   text-decoration-line: none;
 }
@@ -73,7 +73,7 @@ main {
 
 .text,
 .color {
-  font-size: 30px;
+  font-size: 1.875rem;
   letter-spacing: 1.5px;
 }
 
@@ -92,7 +92,7 @@ main {
 
   padding: 5px 10px;
 
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .button:hover {
