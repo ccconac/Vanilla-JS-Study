@@ -21,4 +21,4 @@
 
 - [x] CLICK ME 버튼을 누르면 배경색과 Background Color가 배경색에 해당하는 색상 코드로 변경된다.
   - [x] Header의 Simple을 누를 경우 기본적인 색상(ex. red, blue, purple)만 나타난다.
-  - [ ] Header의 Hex를 누를 경우 Hex로 나타난다.
+  - [x] Header의 Hex를 누를 경우 Hex로 나타난다.
