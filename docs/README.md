@@ -4,10 +4,10 @@
 
 ### 📌 Header
 
-- [ ] 좌측에는 Color Flipper, 우측에는 Simple과 Hex를 배치한다.
-  - [ ] Color Flipper의 색상은 `dodgerblue`로 지정한다.
-  - [ ] Simple/Hex 글자에 마우스를 가져다 대면 색상이 `dodgerblue`로 변경된다.
-  - [ ] Simple/Hex 글자에 마우스를 가져다 대지 않을 경우 색상은 `black`으로 지정한다.
+- [x] 좌측에는 Color Flipper, 우측에는 Simple과 Hex를 배치한다.
+  - [x] Color Flipper의 색상은 `dodgerblue`로 지정한다.
+  - [x] Simple/Hex 글자에 마우스를 가져다 대면 색상이 `dodgerblue`로 변경된다.
+  - [x] Simple/Hex 글자에 마우스를 가져다 대지 않을 경우 색상은 `black`으로 지정한다.
 
 ### 📌 Main
 
