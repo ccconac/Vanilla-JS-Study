@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: dodgerblue;
 }
 
 .container {
@@ -15,6 +16,8 @@ header {
   height: 10%;
   box-shadow: 0 2px 4px #0000001a;
   padding: 0 30px 0 30px;
+
+  background-color: white;
 }
 
 .title {
@@ -45,8 +48,6 @@ main {
   align-items: center;
 
   height: 90%;
-
-  background-color: dodgerblue;
 }
 
 .sub-container {
