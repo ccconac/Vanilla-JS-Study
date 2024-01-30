@@ -1,5 +1,8 @@
 export const counter = (count, event) => {
   switch (event.target.id) {
+    case 'divide':
+      count /= 2;
+      break;
     case 'decrease':
       count -= 1;
       break;
@@ -8,6 +11,9 @@ export const counter = (count, event) => {
       break;
     case 'increase':
       count += 1;
+      break;
+    case 'multiply':
+      count *= 2;
       break;
     default:
       return count;
