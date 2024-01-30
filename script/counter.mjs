@@ -1,7 +1,7 @@
 export const counter = (count, event) => {
   switch (event.target.id) {
     case 'divide':
-      count /= 2;
+      count = Math.round(count / 2);
       break;
     case 'decrease':
       count -= 1;
