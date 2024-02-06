@@ -1,27 +1,16 @@
 import { ANIMALS } from './animals.mjs';
 import { showAnimal } from './showAnimal.mjs';
+import { setCurrentAnimal, getCurrentAnimal } from './carousel.mjs';
+import { addCarouselListener } from './listener.mjs';
 
 const previousButton = document.getElementById('prev-btn');
 const nextButton = document.getElementById('next-btn');
 const surpriseButton = document.getElementById('surprise-btn');
 
-let currentAnimal = 0;
-
-previousButton.addEventListener('click', () => {
-  currentAnimal -= 1;
-  if (currentAnimal < 0) currentAnimal = ANIMALS.length - 1;
-
-  showAnimal(currentAnimal);
-});
-
-nextButton.addEventListener('click', () => {
-  currentAnimal += 1;
-  if (currentAnimal > ANIMALS.length - 1) currentAnimal = 0;
-
-  showAnimal(currentAnimal);
-});
+addCarouselListener(previousButton, -1);
+addCarouselListener(nextButton, 1);
 
 surpriseButton.addEventListener('click', () => {
-  currentAnimal = Math.floor(Math.random() * ANIMALS.length);
-  showAnimal(currentAnimal);
+  setCurrentAnimal(Math.floor(Math.random() * ANIMALS.length));
+  showAnimal(getCurrentAnimal());
 });
