@@ -1,9 +1,21 @@
+import { ANIMALS } from './animals.mjs';
 import { showAnimal } from './showAnimal.mjs';
-import { carousel, getCurrentAnimal } from './carousel.mjs';
+import { carousel, getCurrentAnimal, setCurrentAnimal } from './carousel.mjs';
 
-export const addCarouselListener = (button, step) => {
+const addCarouselListener = (button, step) => {
   button.addEventListener('click', () => {
     carousel(step);
     showAnimal(getCurrentAnimal());
   });
 };
+
+const addSurpriseListener = (button) => {
+  button.addEventListener('click', () => {
+    let randomAnimal = Math.floor(Math.random() * ANIMALS.length);
+
+    setCurrentAnimal(randomAnimal);
+    showAnimal(getCurrentAnimal());
+  });
+};
+
+export { addCarouselListener, addSurpriseListener };
