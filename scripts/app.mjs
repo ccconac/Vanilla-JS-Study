@@ -7,6 +7,7 @@ const animalDescription = document.getElementById('description');
 
 const previousButton = document.getElementById('prev-btn');
 const nextButton = document.getElementById('next-btn');
+const surpriseButton = document.getElementById('surprise-btn');
 
 let currentAnimal = 0;
 
@@ -30,5 +31,10 @@ nextButton.addEventListener('click', () => {
   currentAnimal += 1;
   if (currentAnimal > ANIMALS.length - 1) currentAnimal = 0;
 
+  showAnimal(currentAnimal);
+});
+
+surpriseButton.addEventListener('click', () => {
+  currentAnimal = Math.floor(Math.random() * ANIMALS.length);
   showAnimal(currentAnimal);
 });
