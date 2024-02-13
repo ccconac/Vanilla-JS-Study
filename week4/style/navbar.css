@@ -58,12 +58,17 @@ main {
 }
 
 .menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
 
   width: 100%;
   height: 0;
 
-  top: 60px;
+  padding: 0;
+
+  top: 45px;
   left: 0;
 
   overflow: hidden;
@@ -74,14 +79,23 @@ main {
 
 .menu-items a {
   display: block;
-  padding: 5px 0 5px 0;
+  padding: 15px 0 15px 20px;
 
   font-size: 18px;
   text-transform: capitalize;
 }
 
+.menu-items a:hover {
+  padding-left: 25px;
+
+  color: #5aad0d;
+  background-color: #eeffde;
+
+  transition: all 0.3s linear;
+}
+
 .show-menus {
-  height: 170px;
+  height: 228px;
 }
 
 .sns-icons {
