@@ -49,6 +49,7 @@ main {
   background-color: transparent;
 
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .menu-button:hover {
