@@ -117,6 +117,30 @@ main {
     display: none;
   }
 
+  .menu-items {
+    position: static;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 20px;
+
+    overflow: visible;
+    transition: none;
+
+    box-shadow: none;
+  }
+
+  .menu-items a:hover {
+    padding-left: 20px;
+
+    color: #000;
+    background-color: transparent;
+  }
+
   .sns-icons,
   .menu-items {
     display: flex;
