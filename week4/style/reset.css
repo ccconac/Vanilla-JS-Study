@@ -40,10 +40,6 @@ h4 {
   text-wrap: balance;
 }
 
-button {
-  font: inherit;
-}
-
 :target {
   scroll-margin-block: 5ex;
 }
