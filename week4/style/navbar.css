@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+
+  padding: 25px;
+}
+
+ul {
+  display: flex;
+
+  font-size: 20px;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100% - 60px);
+}
