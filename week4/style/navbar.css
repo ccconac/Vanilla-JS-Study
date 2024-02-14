@@ -53,7 +53,6 @@ main {
 }
 
 .menu-button:hover {
-  transition: 0.7s;
   transform: rotate(90deg);
 }
 
