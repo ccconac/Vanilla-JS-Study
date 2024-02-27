@@ -2,14 +2,14 @@ const openButton = document.querySelector('.open-modal');
 const modal = document.querySelector('.modal-background');
 const closeButton = document.querySelector('.close-modal');
 
-openButton.addEventListener('click', () => {
+const openModal = () => {
   modal.classList.add('visible-modal');
-});
+};
 
-closeButton.addEventListener('click', () => {
+const closeModal = () => {
   modal.classList.remove('visible-modal');
-});
+};
 
-modal.addEventListener('click', () => {
-  modal.classList.remove('visible-modal');
-});
+openButton.addEventListener('click', openModal);
+closeButton.addEventListener('click', closeModal);
+modal.addEventListener('click', closeModal);
