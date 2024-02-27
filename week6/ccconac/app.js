@@ -9,3 +9,7 @@ openButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   modal.classList.remove('visible-modal');
 });
+
+modal.addEventListener('click', () => {
+  modal.classList.remove('visible-modal');
+});
