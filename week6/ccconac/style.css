@@ -58,7 +58,7 @@ h1 {
 }
 
 .modal-background {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -79,9 +79,16 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  width: 500px;
+  width: 550px;
   height: 200px;
 
   border-radius: 10px;
   background-color: #fff;
+}
+
+.visible-modal {
+  display: flex;
+
+  visibility: visible;
+  z-index: 10;
 }
