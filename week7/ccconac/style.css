@@ -37,7 +37,6 @@ body {
   flex-direction: column;
 
   width: 550px;
-  height: 150px;
 
   padding: 20px;
 
@@ -54,10 +53,7 @@ body {
   width: 100%;
   height: 20px;
 
-  padding-bottom: 20px;
-
   color: #090a34;
-  border-bottom: 1px solid #d2d2d2;
 }
 
 .card-button {
@@ -78,10 +74,15 @@ body {
 }
 
 .answer {
-  display: flex;
+  display: none;
   align-items: center;
 
-  height: 100%;
+  height: 100px;
 
   color: #617d98;
+  border-top: 1px solid #d2d2d2;
+}
+
+.show-answer {
+  display: flex;
 }
