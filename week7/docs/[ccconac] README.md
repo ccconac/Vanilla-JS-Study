@@ -21,4 +21,4 @@
 - [x] Question Card 좌측 버튼을 클릭할 경우 질문에 대한 답변이 적혀 있는 카드가 나타난다.
   - [x] 이때, 클릭된 버튼의 모양이 `+`에서 `-`으로 변경된다.
 - [x] Question Card의 답변이 펼쳐져 있는 상태에서 버튼을 다시 클릭할 경우 펼쳐져 있던 Question Card가 닫힌다.
-- [ ] Question Card의 답변이 펼쳐져 있는 상태에서 다른 Question Card를 펼칠 경우 펼쳐져 있던 Question Card가 닫힌다.
+- [x] Question Card의 답변이 펼쳐져 있는 상태에서 다른 Question Card를 펼칠 경우 펼쳐져 있던 Question Card가 닫힌다.
