@@ -57,6 +57,8 @@ body {
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 
+  padding-bottom: 30px;
+
   gap: 48px 32px;
 }
 
