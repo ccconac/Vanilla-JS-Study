@@ -3,8 +3,13 @@ import { CLOTHES } from './clothes.mjs';
 const clothesSection = document.querySelector('.clothes-container');
 const buttonSection = document.querySelector('.buttons-wrap');
 
-const displayClothes = () => {
-  let clothes = CLOTHES.map((item) => {
+window.addEventListener('DOMContentLoaded', () => {
+  displayClothes(CLOTHES);
+  displayButtons();
+});
+
+const displayClothes = (clothesCard) => {
+  let clothes = clothesCard.map((item) => {
     return `<div class="clothes-card">
       <div class="img-wrap">
         <img
@@ -36,7 +41,24 @@ const displayButtons = () => {
   });
 
   buttonSection.innerHTML = buttons.join('\n');
-};
 
-displayClothes();
-displayButtons();
+  const filterButtons = document.querySelectorAll('.filter-button');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      const category = e.target.innerHTML;
+
+      const clothesCategory = CLOTHES.filter((clothes) => {
+        if (clothes.category === category) {
+          return clothes;
+        }
+      });
+
+      if (category === 'ALL') {
+        displayClothes(CLOTHES);
+      } else {
+        displayClothes(clothesCategory);
+      }
+    });
+  });
+};
