@@ -78,6 +78,13 @@ body {
   box-sizing: border-box;
 
   gap: 55px;
+
+  transition: margin 0.6s;
+}
+
+.clothes-card:hover {
+  margin-bottom: 7px;
+  margin-top: -7px;
 }
 
 .img-wrap {
