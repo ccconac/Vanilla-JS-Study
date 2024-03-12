@@ -3,13 +3,32 @@ import displayClothes from './displayClothes.mjs';
 
 const buttonSection = document.querySelector('.buttons-wrap');
 
-const displayButtons = () => {
+const createCategoryArray = () => {
   const category = ['ALL'];
 
   CLOTHES.map((item) => {
-    if (category.includes(item.category)) return;
-    category.push(item.category);
+    if (!category.includes(item.category)) {
+      category.push(item.category);
+    }
   });
+
+  return category;
+};
+
+const filterClothesItem = (category) => {
+  if (category === 'ALL') {
+    displayClothes(CLOTHES);
+  } else {
+    const clothesCategory = CLOTHES.filter(
+      (clothes) => clothes.category === category
+    );
+
+    displayClothes(clothesCategory);
+  }
+};
+
+const displayButtons = () => {
+  const category = createCategoryArray();
 
   let buttons = category.map((category) => {
     return `<button class="filter-button">${category}</button>`;
@@ -22,18 +41,7 @@ const displayButtons = () => {
   filterButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
       const category = e.target.innerHTML;
-
-      const clothesCategory = CLOTHES.filter((clothes) => {
-        if (clothes.category === category) {
-          return clothes;
-        }
-      });
-
-      if (category === 'ALL') {
-        displayClothes(CLOTHES);
-      } else {
-        displayClothes(clothesCategory);
-      }
+      filterClothesItem(category);
     });
   });
 };
