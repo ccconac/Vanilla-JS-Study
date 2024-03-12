@@ -1,6 +1,7 @@
 import { CLOTHES } from './clothes.mjs';
 
 const clothesSection = document.querySelector('.clothes-container');
+const buttonSection = document.querySelector('.buttons-wrap');
 
 const displayClothes = () => {
   let clothes = CLOTHES.map((item) => {
@@ -22,4 +23,20 @@ const displayClothes = () => {
   clothesSection.innerHTML = clothes.join('\n');
 };
 
+const displayButtons = () => {
+  const category = ['ALL'];
+
+  CLOTHES.map((item) => {
+    if (category.includes(item.category)) return;
+    category.push(item.category);
+  });
+
+  let buttons = category.map((category) => {
+    return `<button class="filter-button">${category}</button>`;
+  });
+
+  buttonSection.innerHTML = buttons.join('\n');
+};
+
 displayClothes();
+displayButtons();
