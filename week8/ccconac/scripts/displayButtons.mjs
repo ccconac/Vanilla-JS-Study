@@ -6,7 +6,7 @@ const buttonSection = document.querySelector('.buttons-wrap');
 const createCategoryArray = () => {
   const category = ['ALL'];
 
-  CLOTHES.map((item) => {
+  CLOTHES.forEach((item) => {
     if (!category.includes(item.category)) {
       category.push(item.category);
     }
@@ -16,21 +16,16 @@ const createCategoryArray = () => {
 };
 
 const filterClothesItem = (category) => {
-  if (category === 'ALL') {
-    displayClothes(CLOTHES);
-  } else {
-    const clothesCategory = CLOTHES.filter(
-      (clothes) => clothes.category === category
-    );
+  if (category === 'ALL') return displayClothes(CLOTHES);
 
-    displayClothes(clothesCategory);
-  }
+  const clothesCategory = CLOTHES.filter((item) => item.category === category);
+
+  displayClothes(clothesCategory);
 };
 
 const displayButtons = () => {
   const category = createCategoryArray();
-
-  let buttons = category.map((category) => {
+  const buttons = category.map((category) => {
     return `<button class="filter-button">${category}</button>`;
   });
 

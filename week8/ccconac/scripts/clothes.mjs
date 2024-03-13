@@ -89,4 +89,13 @@ export const CLOTHES = Object.freeze([
     image:
       'https://i.pinimg.com/564x/bb/09/ab/bb09ab14445fe95b7eed2164bf369f29.jpg',
   },
+  {
+    id: 11,
+    category: 'DARK',
+    name: 'BLUE 1',
+    description: 'LOOKBOOK DESCRIPTION',
+    price: '93,000',
+    image:
+      'https://i.pinimg.com/564x/bb/09/ab/bb09ab14445fe95b7eed2164bf369f29.jpg',
+  },
 ]);
