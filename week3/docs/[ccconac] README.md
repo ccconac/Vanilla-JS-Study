@@ -4,10 +4,9 @@
 
 ### 📌 Main
 
-- [x] Review Container 위에 제목 텍스트를 배치한다.
-- [x] Review Container UI를 구현한다.
-  - [x] 컨테이너의 상단에는 동물 이미지를 배치한다. 이때, 가상 선택자를 사용해 [예제](https://vanilla-js-basic-project-3-reviews.netlify.app)와 같이 구현한다.
-  - [x] 이미지 하단에 이미지에 해당하는 동물 이름 텍스트를 배치한다.
+- [x] 화면의 중앙에 Counter 텍스트, 카운트가 반영될 텍스트, 버튼을 배치한다.
+- [x] 버튼은 DECREASE, RESET, INCREASE, MULTIPLY, DIVIDE 다섯 개를 배치한다.
+  - [x] 각 버튼에 마우스를 가져다 대면 버튼 색상을 서서히 검정색으로 변경시킨다.
   - [x] 동물 이름 텍스트 하단에 동물에 대한 상세 정보를 텍스트로 배치한다.
   - [x] 캐러셀 버튼을 배치한다.
   - [x] 서프라이즈 버튼을 배치한다.

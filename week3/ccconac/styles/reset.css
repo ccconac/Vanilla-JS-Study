@@ -8,6 +8,12 @@ html {
   text-size-adjust: none;
 }
 
+<<<<<<< HEAD
+body,
+h1,
+h2 {
+  margin-block-end: 0;
+=======
 h1 {
   font-size: 2.4rem;
 }
@@ -20,6 +26,7 @@ h4,
 p {
   margin-block-end: 0;
   margin: 0.25rem;
+>>>>>>> ccconac3
 }
 
 body {
