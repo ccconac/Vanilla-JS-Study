@@ -13,6 +13,7 @@ const handleButtonClick = (event) => {
     const element = document.getElementById(id);
     element.classList.add('display');
 
+    element.childNodes[1].style.color = id;
   }
 };
 
