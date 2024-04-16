@@ -15,4 +15,11 @@ const generateLipsum = (event) => {
   lipsums.innerHTML = lipsum;
 };
 
+const alertMessage = () => {
+  let value = parseInt(paragraphsInput.value);
+
+  if (value < 0 || value > 9) alert('0 이상 9 이하의 숫자를 입력해 주세요.');
+};
+
+paragraphsInput.addEventListener('input', alertMessage);
 generator.addEventListener('submit', generateLipsum);
